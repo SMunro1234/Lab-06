@@ -29,8 +29,11 @@ diamonds <- diamonds %>% rename(
 ```{r}
 # Do some preliminary investigations & cleaning
 
+ggplot(data = diamonds)+
+  geom_bar(mapping = aes(x = cut))
 
-
+ggplot(data = diamonds)+
+  geom_point(mapping = aes(x= carat, y = price))
 
 ```
 
